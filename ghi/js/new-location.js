@@ -29,14 +29,13 @@ window.addEventListener('DOMContentLoaded', async () => {
     }
     
 
-    const formTag = document.getElementById('create-location-form') // found specific form tag's id we are referencign in the html 
+    const formTag = document.getElementById('create-location-form'); // found specific form tag's id we are referencign in the html 
     formTag.addEventListener('submit', async event => {
         event.preventDefault();
         const formData = new FormData(formTag);
         const json = JSON.stringify(Object.fromEntries(formData));
 
         const locationUrl = 'http://localhost:8000/api/locations/';
-        debugger;
         const fetchConfig = {
             method: "post",
             body: json, 
@@ -52,7 +51,5 @@ window.addEventListener('DOMContentLoaded', async () => {
                 console.log(newLocation);
             }
     });
-
-
 
 });

@@ -35,6 +35,7 @@ class Location(models.Model):
     updated = models.DateTimeField(auto_now=True)
 
     picture_url = models.URLField(null=True)
+    id = models.PositiveIntegerField(primary_key=True)
 
     state = models.ForeignKey(
         State,
