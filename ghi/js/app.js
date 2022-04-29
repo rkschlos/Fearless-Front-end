@@ -35,7 +35,6 @@ try {
         const html = createCard(name, description, pictureUrl);
         const column = document.querySelector('.row');
         column.innerHTML += html;
-        console.log(html);
         }
     }
 
