@@ -8,7 +8,7 @@ class LocationForm extends React.Component {
             name: "",
             roomCount: "",
             city:"",
-            states: []
+            states: [],
         };
         this.handleNameChange = this.handleNameChange.bind(this);
         this.handleRoomCountChange = this.handleRoomCountChange.bind(this);
