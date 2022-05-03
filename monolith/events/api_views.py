@@ -61,8 +61,10 @@ def api_list_states(request):
 
     #For each state in the states from the database
     for state in states:
-        state_dict = {}
-        state_dict[state.name] = state.abbreviation
+        state_dict = {
+            "name": state.name,
+            "abbreviation": state.abbreviation,
+        }
         state_list.append(state_dict)
         #Create a dictionary that contains the name and
         # abbreviation for each state
