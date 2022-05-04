@@ -1,4 +1,5 @@
 //create a new AttendeesList function componenet and exporting it as the "default"
+import React from 'react';
 
 function AttendeesList(props) {
     return (
